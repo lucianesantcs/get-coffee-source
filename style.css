@@ -19,38 +19,9 @@ body {
   color: #242424;
 }
 
-/* vetores background */
-body::before {
-  content: '';
-  position: absolute;
-  width: 535px;
-  height: 600px;
-  background-image: url('./assets/forma1.svg');
-  background-repeat: no-repeat;
-  background-size: min(600px, 100%);
-  background-position: center top left;
-  top: 108px;
-  left: -130px;
-  z-index: -9999;
-}
-body::after {
-  content: '';
-  position: absolute;
-  width: 592px;
-  height: 567px;
-  background-image: url('./assets/forma2.svg');
-  background-repeat: no-repeat;
-  background-size: min(600px, 100%);
-  background-position: center top left;
-  top: 108px;
-  right: -200px;
-  z-index: -9999;
-}
-
 body,
 html {
   height: 100vh;
-  overflow: hidden;
 }
 
 h1,
@@ -76,6 +47,7 @@ a:hover {
     'header header'
     'main main'
     'footer footer';
+  overflow: hidden;
 }
 
 .container {
@@ -127,6 +99,34 @@ header {
   color: #fca60f;
 }
 
+/* vetores background */
+.main::before {
+  content: '';
+  position: absolute;
+  width: 535px;
+  height: 600px;
+  background-image: url('./assets/forma1.svg');
+  background-repeat: no-repeat;
+  background-size: min(600px, 100%);
+  background-position: center top left;
+  top: 30px;
+  left: -280px;
+  z-index: -9999;
+}
+.main::after {
+  content: '';
+  position: absolute;
+  width: 592px;
+  height: 567px;
+  background-image: url('./assets/forma2.svg');
+  background-repeat: no-repeat;
+  background-size: min(600px, 100%);
+  background-position: center top left;
+  top: -10px;
+  right: -295px;
+  z-index: -9999;
+}
+
 .main {
   height: 75vh;
   grid-area: main;
@@ -134,6 +134,7 @@ header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: center;
+  position: relative;
 }
 
 .main-info h1 {
@@ -198,11 +199,11 @@ header {
 
 @media screen and (max-width: 980px) and (min-width: 720px) {
   /* vetores background */
-  body::before {
+  .main::before {
     content: '';
     display: none;
   }
-  body::after {
+  .main::after {
     content: '';
     display: none;
   }
@@ -279,7 +280,7 @@ header {
     display: none;
   }
   /* vetores background */
-  body::before {
+  .main::before {
     content: '';
     position: absolute;
     width: 535px;
@@ -288,11 +289,11 @@ header {
     background-repeat: no-repeat;
     background-size: min(500px, 100%);
     background-position: center top left;
-    top: 108px;
-    left: -225px;
+    top: 2px;
+    left: -295px;
     z-index: -9999;
   }
-  body::after {
+  .main::after {
     content: '';
     position: absolute;
     width: 592px;
@@ -301,8 +302,8 @@ header {
     background-repeat: no-repeat;
     background-size: min(400px, 100%);
     background-position: center top left;
-    top: 355px;
-    right: -355px;
+    top: 255px;
+    right: -425px;
     z-index: -9999;
   }
 }
