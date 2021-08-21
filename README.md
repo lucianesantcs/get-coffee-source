@@ -23,4 +23,4 @@ Resolução do desafio da landing page Get Coffee proposto no DevChallenge.
 
 ### License
 
-Copyright © 2020 Luciane Santos
+<a href="https://github.com/lucianesantcs/get-coffee-source/blob/main/LICENSE">MIT License</a> © 2020 Luciane Santos
