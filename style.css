@@ -100,7 +100,7 @@ header {
 }
 
 /* vetores background */
-.main::before {
+/* .main::before {
   content: '';
   position: absolute;
   width: 535px;
@@ -125,7 +125,7 @@ header {
   top: -10px;
   right: -295px;
   z-index: -9999;
-}
+} */
 
 .main {
   height: 75vh;
